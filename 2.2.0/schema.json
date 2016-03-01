@@ -1,0 +1,123 @@
+{
+    "name": "TileJSON",
+    "type": "object",
+    "properties": {
+        "tilejson": {
+            "type": "string",
+            "pattern": "\\d+\\.\\d+\\.\\d+\\w?[\\w\\d]*"
+        },
+        "name": {
+            "type": "string"
+        },
+        "description": {
+            "type": "string"
+        },
+        "version": {
+            "type": "string",
+            "pattern": "\\d+\\.\\d+\\.\\d+\\w?[\\w\\d]*"
+        },
+        "attribution": {
+            "type": "string"
+        },
+        "template": {
+            "type": "string"
+        },
+        "legend": {
+            "type": "string"
+        },
+        "scheme": {
+            "type": "string"
+        },
+        "tiles": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "grids": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "data": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "minzoom": {
+            "minimum": 0,
+            "maximum": 22,
+            "type": "integer"
+        },
+        "maxzoom": {
+            "minimum": 0,
+            "maximum": 22,
+            "type": "integer"
+        },
+        "bounds": {
+            "type": "array",
+            "items": {
+                "type": "number"
+            }
+        },
+        "center": {
+            "type": "array",
+            "items": {
+                "type": "number"
+            }
+        },
+        "profile": {
+            "type": "string"
+        },
+        "crs": {
+            "type": "string"
+        },
+        "proj4": {
+            "type": "string"
+        },
+        "extent": {
+            "type": "array",
+            "items": {
+                "type": "number"
+            }
+        },
+        "tile_matrix": {
+            "type": "array",
+            "items": {
+                "id": {
+                    "type": "string"
+                },
+                "tile_size": {
+                    "type": "array",
+                    "items": {
+                      "type": "number"
+                    }
+                },
+                "extent": {
+                    "type": "array",
+                    "items": {
+                        "type": "number"
+                    }
+                },
+                "origin": {
+                    "type": "array",
+                    "items": {
+                        "type": "number"
+                    }
+                },
+                "pixel_size": {
+                    "type": "array",
+                    "items": {
+                        "type": "number"
+                    }
+                },
+                "scale_denominator": {
+                    "type": "number"
+                }
+            }
+        }
+    },
+    "required": ["tilejson", "tiles"]
+}
