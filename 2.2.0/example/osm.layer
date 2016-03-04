@@ -1,62 +1,16 @@
 {
-  "tilejson": "1.0.0",
-  "name": "OpenStreetMap",
-  "description": "A free editable map of the whole world.",
-  "version": "1.0.0",
-  "attribution": "(c) OpenStreetMap contributors, CC-BY-SA",
-  "scheme": "xyz",
-  "tiles": [
-    "http://a.tile.openstreetmap.org/${z}/${x}/${y}.png",
-    "http://b.tile.openstreetmap.org/${z}/${x}/${y}.png",
-    "http://c.tile.openstreetmap.org/${z}/${x}/${y}.png"
-  ],
-  "minzoom": 0,
-  "maxzoom": 4,
-  "bounds": [-180, -85, 180, 85],
-  "profile": "custom",
-  "crs": "EPSG:3857",
-  "proj4": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs",
-  "extent": [-20037508.342789, -22560340.714101, 20035236.938733, 22560231.049629],
-  "tile_matrix": [
-    {
-      "id": "0",
-      "tile_size": [256, 256],
-      "origin": [-20037508.342789, 22560231.049629],
-      "extent": [-20037508.342789, -22560340.714101, 20035236.938733, 22560231.049629],
-      "pixel_size": [176252.23345207, -176252.23345207],
-      "scale_denominator": 629472262.32882
-    },
-    {
-      "id": "1",
-      "tile_size": [256, 256],
-      "origin": [-20037508.342789, 22560231.049629],
-      "extent": [-20037508.342789, -22560340.714101, 20035236.938733, 22560231.049629],
-      "pixel_size": [88126.11672603, -88126.11672603],
-      "scale_denominator": 314736131.16441
-    },
-    {
-      "id": "2",
-      "tile_size": [256, 256],
-      "origin": [-20037508.342789, 22560231.049629],
-      "extent": [-20037508.342789, -22560340.714101, 20035236.938733, 22560231.049629],
-      "pixel_size": [44063.05836302, -44063.05836302],
-      "scale_denominator": 157368065.5822
-    },
-    {
-      "id": "3",
-      "tile_size": [256, 256],
-      "origin": [-20037508.342789, 22560231.049629],
-      "extent": [-20037508.342789, -22560340.714101, 20035236.938733, 22560231.049629],
-      "pixel_size": [22031.52918151, -22031.52918151],
-      "scale_denominator": 78684032.791102
-    },
-    {
-      "id": "4",
-      "tile_size": [256, 256],
-      "origin": [-20037508.342789, 22560231.049629],
-      "extent": [-20037508.342789, -22560340.714101, 20035236.938733, 22560231.049629],
-      "pixel_size": [11015.76459075, -11015.76459075],
-      "scale_denominator": 39342016.395551
-    }
-  ]
+    "tilejson": "1.0.0",
+    "name": "OpenStreetMap",
+    "description": "A free editable map of the whole world.",
+    "version": "1.0.0",
+    "attribution": "(c) OpenStreetMap contributors, CC-BY-SA",
+    "scheme": "xyz",
+    "tiles": [
+        "http://a.tile.openstreetmap.org/${z}/${x}/${y}.png",
+        "http://b.tile.openstreetmap.org/${z}/${x}/${y}.png",
+        "http://c.tile.openstreetmap.org/${z}/${x}/${y}.png"
+    ],
+    "minzoom": 0,
+    "maxzoom": 18,
+    "bounds": [ -180, -85, 180, 85 ]
 }
